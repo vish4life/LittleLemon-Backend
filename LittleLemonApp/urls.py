@@ -12,6 +12,6 @@ urlpatterns=[
     path('groups/delivery-crew/users',views.DCrewCreation.as_view(),name='group-delivery-crew-users'),
     path('groups/delivery-crew/users/<int:pk>',views.DCrewDeletion.as_view(),name='group-delivery-crew-users-delete'),
     path('cart/menu-items',views.CartAddFetchDelete,name='cart-items-details'),
-    path('orders/',views.OrderFetchCreate.as_view(),name='orders'),
+    path('orders',views.OrderFetchCreate.as_view(),name='orders'),
     path('orders/<int:pk>',views.OrderUpdates,name='order-updates'),
 ]

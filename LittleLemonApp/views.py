@@ -107,6 +107,7 @@ class MenuItemView(generics.ListCreateAPIView):
     def post(self,request,*args,**kwargs):
             user = getUserInfo(request.user)
             if(user == 'AD' or user =='MN'):
+                print(request.data)
                 self.create(request,*args,**kwargs)
                 return Response({"message":"Created new entry"},status=status.HTTP_201_CREATED)
             else:
@@ -164,7 +165,7 @@ class ManagerDeletion(generics.RetrieveDestroyAPIView):
     queryset=User.objects.filter(groups__name='Managers')
     serializer_class=CustomUserRegistrationSerializer
     def get_object(self):
-        user=getUserInfo(self.request)
+        user=getUserInfo(self.request.user)
         if(user not in ['AD','MN']):
             raise PermissionDenied({"message":"Not Authorized"},code=status.HTTP_401_UNAUTHORIZED)
         try:
@@ -207,7 +208,7 @@ class DCrewDeletion(generics.RetrieveDestroyAPIView):
     queryset=User.objects.filter(groups__name='DeliveryCrew')
     serializer_class=CustomUserRegistrationSerializer
     def get_object(self):
-        user=getUserInfo(self.request)
+        user=getUserInfo(self.request.user)
         if(user not in ['AD','MN']):
             raise PermissionDenied({"message":"Not Authorized"},code=status.HTTP_401_UNAUTHORIZED)
         try:
@@ -405,7 +406,7 @@ def OrderUpdates(request,pk):
             if order_status_update.is_valid(raise_exception=True):
                 try:
                     order_status_update.save()
-                    return Response({"message":"Order status updated as delivered by "+request.user},status=status.HTTP_202_ACCEPTED)
+                    return Response({"message":"Order status updated as delivered by "+str(request.user)},status=status.HTTP_202_ACCEPTED)
                 except Exception as e:
                     print(str(e))
                     return Response({"message":"Order status could not be updated, please try again or check order number"},status=status.HTTP_200_OK)
