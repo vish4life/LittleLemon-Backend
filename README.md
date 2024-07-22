@@ -78,7 +78,7 @@ Building the backend application for a imaginary restaurant* "`Little Lemon`"
     <td>No role required</td>
     <td>POST</td>
     <td>Creates a new user with username, email,first_name,last_name and password</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-Backend//blob/main/Snapshots_Usecase/01_user_creation_ins_req.JPG" width='600' height='350' /></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/01_user_creation_ins_req.JPG" width='600' height='350' /></td>
     <td></td>
   </tr>
   <tr>
