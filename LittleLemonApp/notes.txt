@@ -1,0 +1,12 @@
+User Credentials:
+-------------------------------------------------------------------------------------------------------------------------------------
+|       User        |       Password        |                    Token                     |        Role        |       Group       |
+-------------------------------------------------------------------------------------------------------------------------------------
+|      admin        |       1234            |   e359c2f5c62f46d875fc55d919b8aeada084124e   |        Admin       |       Admin       |
+|   love_manager    |       Nitrou$123      |   0ba6e27f5f81fcf01f6987e24a5dcedbe248d988   |        Manager     |       Managers    |
+|   faith_manager   |       Nitrou$123      |   f55f3df99e6ca90d5e54201bcc95c9a52f29c0a8   |        Manager     |       Managers    |
+|   joy_delivery    |       Nitrou$123      |   b86eb8bfcb57f4db176429afec4e1c270cd85bdf   |    Delivery Crew   |   DeliveryCrew    |
+|   peace_delivery  |       Nitrou$123      |   ac2b21f19aa3ccf2174825c1bb94e269c65d912e   |    Delivery Crew   |   DeliveryCrew    |
+|   nature_customer |       Nitrou$123      |   1866f10fbb98069e0382317b86e39c03bef978b3   |        Customer    |       Anonymous   |
+|   life_customer   |       Nitrou$123      |   e8732697354deff6117697a2739f69805b61b9e3   |        Customer    |       Anonymous   |
+-------------------------------------------------------------------------------------------------------------------------------------
