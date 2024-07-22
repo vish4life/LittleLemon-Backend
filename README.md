@@ -78,23 +78,23 @@ Building the backend application for a imaginary restaurant* "`Little Lemon`"
     <td>No role required</td>
     <td>POST</td>
     <td>Creates a new user with username, email,first_name,last_name and password</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/01_user_creation_ins_req.JPG" width='600' height='350' /></td>
-    <td></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/01_user_creation_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/01_user_creation_ins_res.JPG"/></td>
   </tr>
   <tr>
     <td>/api/users/users/me/</td>
     <td>Anyone with a valid user token</td>
     <td>GET</td>
     <td>Displays only the current user</td>
-    <td></td>
-    <td></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/02_user_details_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/02_user_details_ins_res.JPG"/></td>
   </tr>
   <tr>
     <td>/token/login/</td>
     <td>Anyone with a valid username and password</td>
     <td>POST</td>
     <td>Generates access tokens that can be used in other API calls in this project</td>
-    <td></td>
-    <td></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/03_token_creation_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/03_token_creation_ins_res.JPG"/></td>
   </tr>
 </table>
