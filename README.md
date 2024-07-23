@@ -56,10 +56,16 @@ Building the backend application for a imaginary restaurant* "`Little Lemon`"
 # Technical Design
 ### Libraries
 > Python V3.12.3
+
+> > Pipenv (virtual environment)
+
 > >  Djoser V 2.2.3
 
 > >  Django V5.0.7
 > >   * Djangorestframework V3.15.2
+
+### Database:
+> SQLite
 
 ## Code Flow:
 ### Processing Logic:
