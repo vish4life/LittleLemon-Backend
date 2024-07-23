@@ -92,7 +92,7 @@ def CategoryUpdate(request,pk):
                 serialized_item.save()
                 return Response({"message":"Category partially updated"})
     else:
-        return Response({"message":"Unauthorized"},status=status.HTTP_401_UNAUTHORIZED)
+        return Response({"message":"Not Authorized"},status=status.HTTP_401_UNAUTHORIZED)
     
 # class based view function for fetching and creating menu items
 class MenuItemView(generics.ListCreateAPIView):
@@ -112,6 +112,12 @@ class MenuItemView(generics.ListCreateAPIView):
                 return Response({"message":"Created new entry"},status=status.HTTP_201_CREATED)
             else:
                 return Response({"message":"Not Authorized"},status=status.HTTP_401_UNAUTHORIZED)
+    def put(sel,request):
+        return Response({"message":"Not Authorized"},status=status.HTTP_401_UNAUTHORIZED)
+    def patch(sel,request):
+        return Response({"message":"Unauthorized"},status=status.HTTP_401_UNAUTHORIZED)
+    def destroy(sel,request):
+        return Response({"message":"Unauthorized"},status=status.HTTP_401_UNAUTHORIZED)
 
 #class based view function for updating, partially updating and deleting menu items based on user group
 class MenuItemUpdate(generics.RetrieveUpdateDestroyAPIView):

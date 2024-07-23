@@ -98,3 +98,39 @@ Building the backend application for a imaginary restaurant* "`Little Lemon`"
     <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/03_token_creation_ins_res.JPG"/></td>
   </tr>
 </table>
+
+## Menu Items
+<table>
+  <tr>
+    <td><h2>End point</h2></td>
+    <td><h2>Role</h2></td>
+    <td><h2>Method</h2></td>
+    <td><h2>Purpose</h2></td>
+    <td><h2>Request</h2></td>
+    <td><h2>Response</h2></td>
+  </tr>
+  <tr>
+    <td>/api/menu-items</td>
+    <td>Customer, delivery crew</td>
+    <td>GET</td>
+    <td>Lists all menu items. Return a 200 – Ok HTTP status code</td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/04_get_menu_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/04_get_menu_ins_res.JPG"/></td>
+  </tr>
+  <tr>
+    <td>/api/menu-items</td>
+    <td>Customer, delivery crew</td>
+    <td>POST, PUT, PATCH, DELETE</td>
+    <td>Denies access and returns 403 – Unauthorized HTTP status code</td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/04_put_menu_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/04_put_menu_ins_res.JPG"/></td>
+  </tr>
+  <tr>
+    <td>/api/menu-items/{menuItem}</td>
+    <td>Customer, delivery crew</td>
+    <td>GET</td>
+    <td>Lists single menu item</td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/06_get_menu_id_ins_req.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/LittleLemon-Backend/blob/main/Snapshots_Usecase/06_get_menu_id_ins_res.JPG"/></td>
+  </tr>
+</table>
