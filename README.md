@@ -32,15 +32,15 @@ Building the backend application for a imaginary restaurant* "`Little Lemon`"
 
 ## Functional Design
 * Users are categorized under three roles and are assigned groups respectively
-    > * Based on the user the operations are made available
+    > * The operations are made available based on the user group 
 * Customer:
     * Operations allowed for a customer
-        > * User creation, token generation and view details
+        > * User creation, token generation and view user details
         > * Access Menu items
         > * Add or delete items to Cart
         > * Create Orders or View Order History
 * Manager:
-    > * User creation, token generation and view details
+    > * User creation, token generation and view user details
     > * Assign / Remove users from groups 
     > * Create, View, Delete Menu items
     > * View, Update, Delete Orders
